@@ -1,6 +1,5 @@
 pipeline {
-  ##agent any #pic any agent by jenkins
-  agent { label 'workstation' } #picking the agent by its name
+  agent { label 'workstation' }
 
   stages{
     stage("one"){
