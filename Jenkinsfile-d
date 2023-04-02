@@ -1,5 +1,5 @@
 pipeline {
-  agent { node { label 'terraform' } }
+  agent { label 'terraform' }
 
   environment {
     SAMPLE_URL = "google.com"
