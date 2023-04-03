@@ -17,7 +17,7 @@ node("workstation"){
       }
     }
 
-    if ( PERSON == "SHALINI") {
+    if ( PERSON == "SHALINI" ) {
         stage("two") {
            input(id: 'deploy_approval', message: 'Approve deployment?', ok: 'Deploy', reject: 'Cancel')
            echo "two"
