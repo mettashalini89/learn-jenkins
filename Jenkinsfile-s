@@ -17,13 +17,12 @@ node("workstation"){
       }
     }
 
-    if ( person == 'Shalini') {
 
-      stage("two") {
-         input(id: 'deploy_approval', message: 'Approve deployment?', ok: 'Deploy', reject: 'Cancel')
-         echo "two"
-      }
+    stage("two") {
+       input(id: 'deploy_approval', message: 'Approve deployment?', ok: 'Deploy', reject: 'Cancel')
+       echo "two"
     }
+
   }catch (e){
       stage("Declarative post actions") {
         echo "This will run when itz a failure"
