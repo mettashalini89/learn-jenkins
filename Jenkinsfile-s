@@ -2,8 +2,10 @@ node("workstation"){
 
   env.SAMPLE_URL = "google.com"
 
-  parameters([
-    string(name: 'PARAM1', defaultValue: 'Mr Jenkins', description: 'Description of PARAM1'),
+  properties([
+    parameters([
+        string(name: 'PARAM1', defaultValue: 'Mr Jenkins', description: 'Description of PARAM1')
+    ])
   ])
 
   try {
